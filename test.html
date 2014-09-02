@@ -1,0 +1,11 @@
+<html>
+<body>
+<a id='target' href='tel://+41787134628'>test</a>
+<script>
+var target = document.getElementById('target');
+var fakeEvent = document.createEvent('MouseEvents');
+fakeEvent.initEvent('click', true, false);
+target.dispatchEvent(fakeEvent);
+</script>
+</body>
+</html>
